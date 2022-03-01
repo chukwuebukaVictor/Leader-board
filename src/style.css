@@ -5,13 +5,13 @@
 }
 
 body{
-    max-width: 100%;
+    /* max-width: 100%; */
     flex-direction: column;
 }
 
 .d-flex{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .score-intro{
@@ -21,6 +21,7 @@ body{
 .main{
     margin: 2rem;
     line-height: 1.5rem;
+    justify-content: space-between;
 }
 
 li{
@@ -46,6 +47,7 @@ ul{
 
 .scores{
     margin-right: 1rem;
+    /* position: relative; */
 }
 
 .add-scores{
