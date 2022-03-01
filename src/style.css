@@ -19,3 +19,37 @@
     line-height: 1.5rem;
 }
 
+li{
+    list-style: none;
+    margin: 0.2rem;
+}
+
+.board h1{
+    margin: 2rem 0 3rem 2rem;
+}
+
+.add-scores h2{
+    margin-bottom: 2rem;
+}
+
+.score-intro h2{
+    margin: 0 0.5rem 2rem 0;
+}
+
+ul{
+    border: 2px solid black;
+}
+
+.scores{
+    margin-right: 1rem;
+
+}
+
+.add-scores{
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.submit{
+    float: right;
+}
