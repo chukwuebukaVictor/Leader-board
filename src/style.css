@@ -1,63 +1,74 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    /* max-width: 100%; */
-    flex-direction: column;
+body {
+  flex-direction: column;
 }
 
-.d-flex{
-    display: flex;
-    /* justify-content: space-between; */
+.d-flex {
+  display: flex;
 }
 
-.score-intro{
-    align-content: center;
+.score-intro {
+  align-content: center;
 }
 
-.main{
-    margin: 2rem;
-    line-height: 1.5rem;
-    justify-content: space-between;
+.main {
+  margin: 2rem;
+  line-height: 1.5rem;
+  justify-content: space-between;
 }
 
-li{
-    list-style: none;
-    padding: 0.2rem;
+li {
+  list-style: none;
+  padding: 0.2rem;
 }
 
-.board h1{
-    margin: 2rem 0 3rem 2rem;
+.board h1 {
+  margin: 2rem 0 3rem 2rem;
 }
 
-.add-scores h2{
-    margin-bottom: 2rem;
+.add-scores h2 {
+  margin-bottom: 2rem;
 }
 
-.score-intro h2{
-    margin: 0 0.5rem 2rem 0;
+.score-intro h2 {
+  margin: 0 1rem 2rem 0;
 }
 
-ul{
-    border: 2px solid black;
+ul {
+  border: 2px solid black;
 }
 
-.scores{
-    margin-right: 1rem;
+.scores {
+  margin-right: 1rem;
 }
 
-.add-scores{
-    margin-left: 1rem;
-    flex-direction: column;
+.add-scores {
+  margin-left: 1rem;
+  flex-direction: column;
 }
 
-.submit{
-    float: right;
+.submit {
+  float: right;
+  margin-right: 0.5rem;
 }
 
-li:nth-child(odd) { 
-    background-color: lightgray;
+li:nth-child(odd) {
+  background-color: lightgray;
+  padding-right: 10rem;
+}
+
+li:nth-child(even) {
+  padding-right: 10rem;
+}
+
+.name-input,
+.score-input {
+  display: inline-block;
+  width: auto;
+  margin: 0.5rem 0.5rem 0 0;
 }
