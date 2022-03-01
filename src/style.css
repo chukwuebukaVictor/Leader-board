@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-intro{
+    align-content: center;
+}
+
+.main{
+    margin: 2rem;
+    line-height: 1.5rem;
+}
+

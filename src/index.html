@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
 </head>
-<body>
+<body class="d-fle">
 	<section class="board">
 		<h1>Leaderboard</h1>
-		<main>
+		<main class="main d-flex">
 			<section class="scores">
-			<div>
+			<div class="d-flex score-intro">
 				<h2>Recent scores</h2>
-				<button>Refresh</button>
+				<div><button>Refresh</button></div>
 			</div>
 			<ul>
 				<li>Name: 100</li>
@@ -20,11 +20,11 @@
 				<li>Name; 20</li>
 			</ul>
 			</section>
-			<section class="add-scores">
+			<section class="add-scores d-flex">
 				<h2>Add your score</h2>
-				<input type="text" class="name-input" placeholder="Your name">
-				<input type="text" class="score-input" placeholder="Your score">
-				<button>Submit</button>
+				<div><input type="text" class="name-input" placeholder="Your name"></div>
+				<div><input type="text" class="score-input" placeholder="Your score"></div>
+				<div><button class="submit">Submit</button></div>
 			</section>
 		</main>
 	</section>
