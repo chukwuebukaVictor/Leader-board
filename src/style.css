@@ -26,7 +26,7 @@ body{
 
 li{
     list-style: none;
-    margin: 0.2rem;
+    padding: 0.2rem;
 }
 
 .board h1{
@@ -47,7 +47,6 @@ ul{
 
 .scores{
     margin-right: 1rem;
-    /* position: relative; */
 }
 
 .add-scores{
@@ -57,4 +56,8 @@ ul{
 
 .submit{
     float: right;
+}
+
+li:nth-child(odd) { 
+    background-color: lightgray;
 }
