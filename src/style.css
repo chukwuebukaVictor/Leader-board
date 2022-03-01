@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 100%;
+    flex-direction: column;
+}
 
 .d-flex{
     display: flex;
@@ -42,7 +46,6 @@ ul{
 
 .scores{
     margin-right: 1rem;
-
 }
 
 .add-scores{
