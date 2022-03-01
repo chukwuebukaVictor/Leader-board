@@ -4,7 +4,7 @@
 
 > Leaderboard is a webapp where user can maintain a list of anmes and scores in a game.
 
-<img width="563" alt="Screenshot 2022-02-09 at 2 11 20 AM" src="Leaderboard.png">
+<img width="563" src="./src/Leaderboard.png">
 
 
 ## Built With
