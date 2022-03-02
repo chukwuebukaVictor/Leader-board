@@ -5,70 +5,66 @@
 }
 
 body {
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .d-flex {
   display: flex;
 }
 
-.score-intro {
-  align-content: center;
+.board{
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 2rem;
 }
 
 .main {
-  margin: 2rem;
-  line-height: 1.5rem;
-  justify-content: space-between;
-}
+    margin: 1rem;
+    line-height: 1.5rem;
+  }
 
-li {
-  list-style: none;
-  padding: 0.2rem;
-}
+  li {
+    list-style: none;
+    padding: 0.2rem;
+  }
 
-.board h1 {
-  margin: 2rem 0 3rem 2rem;
-}
+  .scores {
+    margin-right: 1rem;
+  }
+  
+  .add-scores {
+    margin: 0 2rem 0 1rem;
+  }
 
-.add-scores h2 {
-  margin-bottom: 2rem;
-}
+  .board h1 {
+    margin: 2rem 0 3rem 2rem;
+  }
 
-.score-intro h2 {
-  margin: 0 1rem 2rem 0;
-}
+  .add-scores h2 {
+    margin-bottom: 2rem;
+  }
 
-ul {
-  border: 2px solid black;
-}
+  .score-intro h2 {
+    margin: 0 1rem 2rem 0;
+  }
 
-.scores {
-  margin-right: 1rem;
-}
+  ul {
+    border: 2px solid black;
+  }
 
-.add-scores {
-  margin-left: 1rem;
-  flex-direction: column;
-}
+  .submit {
+    float: right;
+  } 
 
-.submit {
-  float: right;
-  margin-right: 0.5rem;
-}
+  li:nth-child(odd) {
+    background-color: lightgray;
+  } 
 
-li:nth-child(odd) {
-  background-color: lightgray;
-  padding-right: 10rem;
-}
 
-li:nth-child(even) {
-  padding-right: 10rem;
-}
 
-.name-input,
+  .name-input,
 .score-input {
-  display: inline-block;
-  width: auto;
-  margin: 0.5rem 0.5rem 0 0;
-}
+  border: 1px solid black;
+} 

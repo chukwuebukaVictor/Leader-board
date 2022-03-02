@@ -18,18 +18,34 @@
 [Live Demo Link](https://chukwuebukavictor.github.io/Leader-board/dist)
 
 ## Getting Started
-
-**Follow the steps below to run this project on you local machine**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-- Understanding of git and github
-### Setup & Install
-- Clone repo on your local device using `git clone <link>` command
+- Get a github account
+- Install gitbash 
+- Use your favorite IDE 
+
+### Setup
+- Clone this GitHub repository [link](https://github.com/chukwuebukaVictor/Leader-board) to your local machine.
+- CD into folder name.
+- On the terminal, run "npm install" to install the dependencies.
+- Finally, run "npm start" to open the app in your Web Browser.
 
 ## Authors
 👤 **Chukwuebuka Victor Ozoede**
 
 - GitHub: [@githubhandle](https://github.com/chukwuebukaVictor)
+  
+  ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/chukwuebukaVictor/Leader-board/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to Microverse for the guidelines for this project.
