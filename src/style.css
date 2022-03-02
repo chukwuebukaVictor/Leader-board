@@ -13,58 +13,56 @@ body {
   display: flex;
 }
 
-.board{
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    margin-top: 2rem;
+.board {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 2rem;
 }
 
 .main {
-    margin: 1rem;
-    line-height: 1.5rem;
-  }
+  margin: 1rem;
+  line-height: 1.5rem;
+}
 
-  li {
-    list-style: none;
-    padding: 0.2rem;
-  }
+li {
+  list-style: none;
+  padding: 0.2rem;
+}
 
-  .scores {
-    margin-right: 1rem;
-  }
-  
-  .add-scores {
-    margin: 0 2rem 0 1rem;
-  }
+.scores {
+  margin-right: 1rem;
+}
 
-  .board h1 {
-    margin: 2rem 0 3rem 2rem;
-  }
+.add-scores {
+  margin: 0 2rem 0 1rem;
+}
 
-  .add-scores h2 {
-    margin-bottom: 2rem;
-  }
+.board h1 {
+  margin: 2rem 0 3rem 2rem;
+}
 
-  .score-intro h2 {
-    margin: 0 1rem 2rem 0;
-  }
+.add-scores h2 {
+  margin-bottom: 2rem;
+}
 
-  ul {
-    border: 2px solid black;
-  }
+.score-intro h2 {
+  margin: 0 1rem 2rem 0;
+}
 
-  .submit {
-    float: right;
-  } 
+ul {
+  border: 2px solid black;
+}
 
-  li:nth-child(odd) {
-    background-color: lightgray;
-  } 
+.submit {
+  float: right;
+}
 
+li:nth-child(odd) {
+  background-color: lightgray;
+}
 
-
-  .name-input,
+.name-input,
 .score-input {
   border: 1px solid black;
-} 
+}
