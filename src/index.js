@@ -1,12 +1,37 @@
 import './style.css';
-import scores from './modules/scores.js';
+import { getScores, postScores } from './modules/api-Call.js';
 
 const displayScores = () => {
-  const newScores = document.querySelector('.new-scores');
-  scores.forEach((score) => {
-    const li = document.createElement('li');
-    li.innerHTML = `${score.name}: ${score.score}`;
-    newScores.appendChild(li);
+  getScores().then((scores) => {
+    const newScores = document.querySelector('.new-scores');
+    newScores.innerHTML = '';
+    scores.result.forEach((el) => {
+      const html = `<li>${el.user}: ${el.score}</li>`;
+      newScores.insertAdjacentHTML('beforeend', html);
+    });
+    return scores;
   });
 };
-displayScores();
+
+const addUserScore = document.querySelector('.submit');
+const refresh = document.querySelector('.refresh');
+
+addUserScore.addEventListener('click', (e) => {
+  e.preventDefault();
+  const nameInput = document.querySelector('.name-input').value;
+  const scoreInput = document.querySelector('.score-input').value;
+  if (nameInput && scoreInput) {
+    postScores(nameInput, scoreInput);
+    displayScores();
+    document.querySelector('.name-input').value = '';
+    document.querySelector('.score-input').value = '';
+  }
+});
+
+refresh.addEventListener('click', () => {
+  displayScores();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  displayScores();
+});
