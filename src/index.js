@@ -6,9 +6,8 @@ const displayScores = () => {
     const newScores = document.querySelector('.new-scores');
     newScores.innerHTML = '';
     scores.result.forEach((el) => {
-      const li = document.createElement('li');
-      li.textContent = `${el.user}: ${el.score}`;
-      newScores.appendChild(li);
+      const html = `<li>${el.user}: ${el.score}</li>`;
+      newScores.insertAdjacentHTML('beforeend', html);
     });
     return scores;
   });
@@ -30,5 +29,9 @@ addUserScore.addEventListener('click', (e) => {
 });
 
 refresh.addEventListener('click', () => {
+  displayScores();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
   displayScores();
 });
