@@ -6,20 +6,21 @@
     <title>Leaderboard</title>
 </head>
 <body class="d-flex">
-	<main class="board d-flex">
-		<h1>Leaderboard</h1>
-		<section class="main d-flex">
+	<main class="board">
+		<h1 class="proj-name">Leaderboard</h1>
+		<section class="main">
 			<div class="scores">
-				<div class="d-flex score-intro">
+				<div class="score-intro d-flex">
 					<h2>Recent scores</h2>
 					<div><button class="refresh" type="reset">Refresh</button></div>
 				</div>
+				<div class="alert"></div>
 				<ul class="new-scores">
 				</ul>
 			</div>
-			<section class="add-scores d-fle">
+			<section class="add-scores">
 				<h2>Add your score</h2>
-				<div><input type="text" class="name-input" placeholder="Your name"></div>
+				<div class="name-input-cont"><input type="text" class="name-input" placeholder="Your name"></div>
 				<div><input type="text" class="score-input" placeholder="Your score"></div>
 				<div><input class="submit" type="button" value="Submit"></div>
 			</section>
