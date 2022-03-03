@@ -1,13 +1,13 @@
 
 const getScores = async() => {
-    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/OYKtMRSrWfyHNCTzyiXp/scores/';
+    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7kcNOnGRPhN5KbkHWsGs/scores/';
     const response = await fetch(url);
     const scores = response.json() 
     return scores;
   }
-  
-  export const postScores = async(name, points)=> {
-    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/OYKtMRSrWfyHNCTzyiXp/scores/';
+   
+  const postScores = async(name, points)=> {
+    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7kcNOnGRPhN5KbkHWsGs/scores/';
     const response = await fetch(url,{
         method: 'POST',
         body: JSON.stringify({
@@ -20,7 +20,7 @@ const getScores = async() => {
     const scores = response.json();
     return scores;
   };
+ 
   
-  export default getScores;
-  // export {getScores, postScores};
+  export { getScores, postScores };
   
