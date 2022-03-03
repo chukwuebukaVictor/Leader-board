@@ -2,11 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(212, 224, 240);
+}
+
+li {
+  list-style: none;
+  padding: 0.2rem;
 }
 
 .d-flex {
@@ -15,43 +23,60 @@ body {
 
 .board {
   flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .main {
   margin: 1rem;
   line-height: 1.5rem;
-}
-
-li {
-  list-style: none;
-  padding: 0.2rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .scores {
-  margin-right: 1rem;
+  margin: 0 0.5rem;
+  background-color: lightsteelblue;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .add-scores {
-  margin: 0 2rem 0 1rem;
+  margin: 0 0.5rem 0 0.5rem;
+  background-color: lightsteelblue;
+  padding: 0.5rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+}
+
+.score-intro {
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-name {
+  text-align: center;
 }
 
 .board h1 {
-  margin: 2rem 0 3rem 2rem;
+  margin: 2rem 0 3rem 0;
 }
 
-.add-scores h2 {
-  margin-bottom: 2rem;
-}
-
-.score-intro h2 {
-  margin: 0 1rem 2rem 0;
+.name-input-cont {
+  margin-top: 1rem;
 }
 
 ul {
   border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.score-intro h2 {
+  margin-right: 1rem;
 }
 
 .submit {
@@ -62,7 +87,24 @@ li:nth-child(odd) {
   background-color: lightgray;
 }
 
+.alert {
+  text-align: center;
+}
+
+.submit,
+.refresh {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
 .name-input,
 .score-input {
-  border: 1px solid black;
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 0.2rem;
+  margin: 0.2rem 0;
 }

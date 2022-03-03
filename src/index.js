@@ -16,11 +16,19 @@ const displayScores = () => {
 const addUserScore = document.querySelector('.submit');
 const refresh = document.querySelector('.refresh');
 
+const showAlert = (message) => {
+  const alert = document.querySelector('.alert');
+  alert.appendChild(document.createTextNode(message));
+  alert.style.backgroundColor = 'lightGreen';
+  setTimeout(() => document.querySelector('.alert').remove(), 2000);
+};
+
 addUserScore.addEventListener('click', (e) => {
   e.preventDefault();
   const nameInput = document.querySelector('.name-input').value;
   const scoreInput = document.querySelector('.score-input').value;
   if (nameInput && scoreInput) {
+    showAlert('User score added successfully');
     postScores(nameInput, scoreInput);
     displayScores();
     document.querySelector('.name-input').value = '';
