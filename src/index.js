@@ -26,13 +26,13 @@ const showAlert = (message) => {
 addUserScore.addEventListener('click', (e) => {
   e.preventDefault();
   const nameInput = document.querySelector('.name-input').value;
-  const scoreInput = document.querySelector('.score-input').value;
-  if (nameInput && scoreInput) {
-    showAlert('User score added successfully');
+  const scoreInput = +(document.querySelector('.score-input').value);
+  if (nameInput && scoreInput && scoreInput >= 0) {
     postScores(nameInput, scoreInput);
     displayScores();
     document.querySelector('.name-input').value = '';
     document.querySelector('.score-input').value = '';
+    showAlert('User score added successfully');
   }
 });
 
