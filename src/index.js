@@ -43,3 +43,5 @@ refresh.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   displayScores();
 });
+
+console.log(typeof 2);
